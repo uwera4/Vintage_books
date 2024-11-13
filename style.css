@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    background-color: #f7f5e6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #e1dccd;
+}
+
+.logo {
+   width: 80px;
+    height: 60px;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+.search input {
+    padding: 0.5rem;
+    border: 1px solid #b4b09e;
+    border-radius: 4px;
+}
+
+/* Categories Section */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.category {
+    background-color: #e1dccd;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.category img{
+    width: 400px;
+    height: 300px;
+}
+
+.about-us {
+    background-color: #e1dccd;
+    margin-bottom: 2rem;
+    
+}
+
+.about-us h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #3a5a40;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-us p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image img {
+    width: 80%; /* Adjust image width to 80% */
+    max-width: 400px; /* Cap the maximum size at 400px */
+     max-height: 200px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustments for About Us section */
+@media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .about-image img {
+        max-width: 90%; /* Make the image more responsive */
+    }
+}
+
+/* Responsive adjustments for About Us section */
+@media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+.book-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.quote {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-style: italic;
+    font-family: 'Lora', serif;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a5a40;
+    color: #f7f5e6;
+    margin-bottom: 2rem;
+}
